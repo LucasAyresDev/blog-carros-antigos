@@ -1,26 +1,28 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <CarrosAntigos />
+    <RollsRoyce />
+    <FordComp />
+    <ChevroLet />
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import CarrosAntigos from './components/CarrosAntigos.vue';
+import RollsRoyce from './components/RollsRoyce.vue';
+import FordComp from './components/FordComp.vue';
+import ChevroLet from './components/ChevroLet.vue';
+
 
 export default {
   name: 'App',
   components: {
-    HelloWorld
+    CarrosAntigos,
+    RollsRoyce, 
+    FordComp,
+    ChevroLet
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
-</style>
+<style src="./assets/style.css"></style>
